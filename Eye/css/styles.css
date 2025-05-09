@@ -1,0 +1,1288 @@
+/* Global Resets & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* Using Open Sans as primary, Inter for headings */
+    line-height: 1.6;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif;
+    color: #2c3e50;
+    margin-bottom: 0.75em;
+}
+
+a {
+    text-decoration: none;
+    color: #C12026;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1251px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* Add some horizontal padding */
+}
+
+/* Buttons - Refactored */
+.btn {
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn-red {
+    background-color: #C12026;
+    color: #fff;
+    border-color: #C12026;
+}
+
+.btn-red:hover {
+    background-color: #a01a1f;
+    /* Darker red */
+    border-color: #a01a1f;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-outline-red {
+    background-color: #fff;
+    color: #C12026;
+    border-color: #C12026;
+}
+
+.btn-outline-red:hover {
+    background-color: #C12026;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-white-on-red {
+    /* For banner */
+    background-color: #C12026;
+    color: #fff;
+    border-color: #fff;
+    /* White border on red bg */
+}
+
+.btn-white-on-red:hover {
+    background-color: #fff;
+    color: #C12026;
+    border-color: #C12026;
+    text-decoration: none;
+}
+
+.btn-white-outline {
+    /* For eye-exam promo */
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-white-outline:hover {
+    background-color: #fff;
+    color: #C12026;
+    text-decoration: none;
+}
+
+.btn-outline-white {
+    /* For footer */
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-white:hover {
+    background-color: #C12026;
+    color: #fff;
+    border-color: #C12026;
+    text-decoration: none;
+}
+
+.btn-border-on-hover:hover {
+    /* For "View Our Brands" */
+    border: 2px solid #C12026;
+    background-color: #fff;
+    color: #C12026;
+}
+
+
+/* Header */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-top-nav {
+    border-bottom: 1px solid #b2b2b2;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.header-top-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    /* Reduced gap slightly */
+}
+
+.header-top-nav ul li a {
+    color: #000;
+    font-size: 14px;
+}
+
+.header-top-nav ul li a:hover {
+    color: #C12026;
+}
+
+.header-top-nav ul li a i {
+    margin-right: 8px;
+    /* Padding for icon */
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 250px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-bar nav ul {
+    display: flex;
+    justify-content: center;
+    /* Or flex-start / space-around based on desired alignment */
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    gap: 20px;
+    /* Spacing between nav items */
+    padding: 10px 0;
+}
+
+.nav-bar nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 12px;
+    /* Adjusted padding */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-bar nav li a:hover {
+    color: #C12026;
+    text-decoration: none;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url(../images/main-hero-banner-1.jpg);
+    /* Corrected path for CSS */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    /* Vertically center content */
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.banner-content {
+    max-width: 600px;
+    /* Constrain width of text */
+}
+
+.banner-content h1 {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    font-size: 3em;
+    /* Responsive font size */
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.5em;
+    /* Responsive font size */
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.banner-content .btn {
+    margin-top: 20px;
+    /* Added margin for buttons */
+}
+
+
+/* Vision Section */
+.vision-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow columns to wrap */
+    align-items: center;
+    gap: 40px;
+    /* Space between columns */
+    margin: 80px 0;
+    background-image: url(../images/New-watermark-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    /* Padding for background image visibility */
+}
+
+.vision-image-column,
+.vision-text-column {
+    flex: 1;
+    /* Each column takes equal space */
+    min-width: 300px;
+    /* Minimum width before wrapping */
+}
+
+.vision-image-column img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.vision-text-column h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.vision-text-column p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.vision-text-column .btn {
+    margin-top: 10px;
+    /* Removed large left margin, let container handle alignment or use text-align on parent if needed */
+}
+
+/* Eye Exam Promo Section */
+.eye-exam-promo {
+    background-image: url(../images/download.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    /* Adjusted padding */
+    color: #ffffff;
+    text-align: left;
+    /* Default, but can be center if desired */
+}
+
+.eye-exam-promo-content {
+    max-width: 700px;
+    /* Control content width */
+    margin-left: 30px;
+    /* Align with original "left: 55px" approx */
+}
+
+.eye-exam-promo h3 {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 1.5;
+    /* Adjusted line height */
+    margin-bottom: 30px;
+}
+
+.eye-exam-promo p {
+    font-size: 20px;
+    line-height: 1.4;
+    /* Adjusted line height */
+    margin-bottom: 20px;
+}
+
+.eye-exam-paragraph-1 {
+    max-width: 49%;
+    /* Maintain approximate original width */
+}
+
+.eye-exam-paragraph-2 {
+    max-width: 46%;
+    /* Maintain approximate original width */
+    margin-top: 30px;
+}
+
+.eye-exam-promo .btn {
+    margin-top: 40px;
+    /* Spacing for button */
+    padding: 13px 25px;
+    /* Specific padding from original */
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 0;
+}
+
+.services-intro h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.service-item,
+.service-item-group {
+    position: relative;
+    /* For caption positioning */
+    overflow: hidden;
+    /* For clean image display */
+    border-radius: 8px;
+    /* Optional: adds rounded corners */
+}
+
+.service-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures image covers area without distortion */
+}
+
+.service-item.large {
+    flex-basis: calc(23% - 20px);
+    /* Approx from original, adjust as needed */
+    height: 500px;
+    /* Example height, adjust based on content */
+}
+
+.service-item-group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-basis: calc(23% - 20px);
+    /* Approx */
+}
+
+.service-item.small {
+    height: 237.5px;
+    /* Approx half of large, adjust */
+}
+
+.service-item-caption {
+    position: absolute;
+    bottom: 0;
+    /* Position at the bottom */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.service-item-caption p {
+    font-size: 18px;
+    /* Adjusted for better readability */
+    font-weight: 700;
+    margin: 0;
+}
+
+.service-item.large .service-item-caption p {
+    font-size: 21px;
+}
+
+
+/* Direct Vision Promo */
+.direct-vision-promo {
+    background-image: url(../images/vision-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 355px;
+    position: relative;
+    /* For absolute positioning of content */
+    margin: 80px 0 0 0;
+    display: flex;
+    /* Using flex for easier centering if needed */
+    align-items: center;
+}
+
+.direct-vision-promo .container {
+    position: relative;
+    /* Context for absolute children */
+    display: flex;
+    align-items: center;
+    /* Align logo and text */
+    gap: 20px;
+    padding-left: 5%;
+    /* Offset content from left */
+}
+
+.direct-vision-logo img {
+    width: 150px;
+    /* Adjust as needed */
+}
+
+.direct-vision-content p {
+    color: #212121;
+    font-size: 29px;
+    margin-bottom: 5px;
+}
+
+.direct-vision-content h4 {
+    color: #212121;
+    font-size: 46px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.direct-vision-content .btn {
+    padding: 15px 37px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+
+/* Browse Collection */
+.browse-collection {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.browse-heading h4 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.browse-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.browse-item {
+    flex-basis: calc(50% - 15px);
+    /* Two items per row */
+    min-width: 300px;
+    text-align: center;
+}
+
+.browse-item img {
+    width: 75%;
+    /* As per original margin implying this */
+    margin: 0 auto 20px auto;
+    /* Center image and add space below */
+    border-radius: 8px;
+    /* Optional */
+}
+
+.browse-item .btn {
+    padding: 13px 25px;
+    /* Specific padding */
+}
+
+
+/* Brands Showcase */
+.brands-showcase {
+    padding: 80px 0;
+    margin-top: 50px;
+    /* Original had margin: 150px 0 0 0 on .brands */
+}
+
+.brands-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brand-column-1 {
+    flex: 0 0 59%;
+    /* Approx width from original */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.brand-column-2 {
+    flex: 0 0 39%;
+    /* Approx width */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.brand-item img {
+    width: 100%;
+    border-radius: 8px;
+    /* Optional */
+}
+
+.brand-item.brand-try-on {
+    position: relative;
+    /* For text overlay */
+}
+
+.brand-try-on-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center content */
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    width: 80%;
+    /* Prevent text from touching edges */
+}
+
+.brand-try-on-content h5 {
+    font-size: 33px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.brand-try-on-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.brand-try-on-content .btn {
+    padding: 12px 24px;
+    font-weight: 700;
+}
+
+/* Brand Logos (Testimonials in original) */
+.brand-logos {
+    padding: 60px 0;
+    margin-top: 30px;
+    /* Reduced from original 100px */
+}
+
+.brand-logos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Distribute logos */
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.brand-logos-grid div {
+    flex-basis: calc(16.66% - 20px);
+    /* Approx 6 items */
+    min-width: 100px;
+    /* Ensure visibility on small screens */
+    text-align: center;
+}
+
+.brand-logos-grid div img {
+    width: 80%;
+    /* Adjust as needed */
+    max-width: 120px;
+    /* Max size for logos */
+    margin: 0 auto;
+}
+
+.brand-logos-action {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.brand-logos-action .btn {
+    padding: 12px 20px;
+    /* Adjusted */
+}
+
+
+/* Contact Lenses Showcase */
+.contact-lenses-showcase {
+    padding: 80px 0;
+}
+
+.contact-lenses-heading h4 {
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-lenses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    /* Center items if they don't fill the row */
+}
+
+.contact-lens-item {
+    flex-basis: calc(25% - 23px);
+    /* Approx 4 items */
+    min-width: 220px;
+    /* Min width before stacking */
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    /* Optional card look */
+    border-radius: 8px;
+}
+
+.contact-lens-item img {
+    width: 80%;
+    /* Control image size within card */
+    max-width: 180px;
+    margin: 0 auto 15px auto;
+}
+
+.lens-name {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 1em;
+    /* Use em for scalability */
+}
+
+.lens-price {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.contact-lenses-action {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-lenses-action .btn {
+    padding: 15px 30px;
+}
+
+
+/* Customer Reviews */
+.customer-reviews {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+    margin-top: 80px;
+}
+
+.reviews-heading h4 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.review-card {
+    flex-basis: calc(33.333% - 20px);
+    min-width: 280px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.review-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.review-card h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review-stars i {
+    font-size: 20px;
+    color: #C12026;
+    margin-right: 5px;
+}
+
+.reviews-more {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.reviews-more a {
+    font-size: 18px;
+    color: #C12026;
+    font-weight: bold;
+}
+
+
+/* Optometrist Info */
+.optometrist-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    margin: 80px 0;
+}
+
+.optometrist-image-column,
+.optometrist-text-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.optometrist-image-column img {
+    border-radius: 8px;
+}
+
+.optometrist-text-column h2 {
+    font-size: 28px;
+    /* Kept original */
+    margin-bottom: 20px;
+}
+
+.optometrist-text-column p {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.75;
+    margin-bottom: 20px;
+    font-weight: 700;
+    /* This was bold in original */
+}
+
+.optometrist-text-column ul {
+    padding-left: 20px;
+    /* Indent list */
+    margin-bottom: 25px;
+}
+
+.optometrist-text-column ul li {
+    line-height: 1.75;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.optometrist-text-column ul li strong {
+    /* Style the doctor names */
+    color: #2c3e50;
+}
+
+.optometrist-text-column .btn {
+    margin-top: 10px;
+    /* Removed large left margin */
+}
+
+
+/* Locations Section */
+.locations-section {
+    background-image: url(../images/location-image.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    /* Adjusted padding */
+}
+
+.locations-title {
+    font-size: 30px;
+    /* approx text-3xl */
+    font-weight: 600;
+    /* approx font-semibold */
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    /* approx mb-8 */
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 21px;
+}
+
+.location-card {
+    background-color: #fff;
+    border-radius: 8px;
+    /* approx rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* approx shadow-md */
+    overflow: hidden;
+}
+
+.location-card-content {
+    padding: 24px;
+    /* approx p-6 */
+}
+
+.location-name {
+    font-size: 20px;
+    /* approx text-xl */
+    font-weight: 600;
+    /* approx font-semibold */
+    color: #2d3748;
+    /* approx text-gray-800 */
+    margin-bottom: 8px;
+    /* approx mb-2 */
+}
+
+.location-phone,
+.location-address {
+    color: #718096;
+    /* approx text-gray-600 */
+    margin-bottom: 8px;
+    /* approx mb-2 or mb-4 */
+    font-size: 15px;
+}
+
+.location-address {
+    margin-bottom: 16px;
+    /* approx mb-4 */
+}
+
+.opening-times-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    /* approx mb-2 */
+    cursor: pointer;
+}
+
+.icon-arrow {
+    width: 20px;
+    /* approx w-5 */
+    height: 20px;
+    /* approx h-5 */
+    color: #a0aec0;
+    /* approx text-gray-500 */
+    margin-right: 4px;
+    /* approx mr-1 */
+    transition: transform 0.3s ease;
+}
+
+.icon-arrow.rotated {
+    transform: rotate(180deg);
+}
+
+.opening-times-label {
+    color: #718096;
+    /* approx text-gray-600 */
+    font-weight: 500;
+    /* approx font-medium */
+    font-size: 15px;
+}
+
+.opening-times-details {
+    display: none;
+    color: #4a5568;
+    /* approx text-gray-700 */
+    font-size: 15px;
+    padding-left: 24px;
+    /* Indent details */
+}
+
+.opening-times-details.show {
+    display: block;
+}
+
+.opening-times-details p {
+    margin-bottom: 8px;
+}
+
+.location-card .btn {
+    /* Button styling already covered by .btn .btn-red */
+    width: 100%;
+    /* Make button full width in card */
+    margin-top: 10px;
+}
+
+/* Message Box */
+.message-box {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* Ensure it's on top */
+    font-size: 16px;
+    min-width: 250px;
+    text-align: center;
+}
+
+.message-box.show {
+    display: block;
+}
+
+.message-box.success {
+    background-color: #f0fdf4;
+    color: #15803d;
+    border: 1px solid #16a34a;
+}
+
+.message-box.error {
+    background-color: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #ef4444;
+}
+
+
+/* Footer */
+footer {
+    background-color: #212121;
+    /* rgb(33, 33, 33) */
+    color: #fff;
+    padding: 60px 0 30px 0;
+    /* Add padding */
+    margin-top: 80px;
+    /* Spacing before footer */
+}
+
+.footer-main {
+    display: flex
+;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.footer-column {
+    flex: 1;
+    /* Allow columns to grow and shrink */
+    min-width: 180px;
+    /* Minimum width before wrapping, adjust as needed */
+}
+
+.footer-logo-info {
+    flex-basis: 20%;
+    /* Give logo column a bit more base width if needed */
+}
+
+.footer-logo-info img {
+    width: 180px;
+    /* Adjust logo size */
+    margin-bottom: 20px;
+}
+
+.footer-logo-info p {
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 25px;
+    color: #ccc;
+    /* Lighter text for description */
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    font-size: 13px;
+    color: #ccc;
+    /* Lighter link color */
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-column .btn-red {
+    margin-top: 20px;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid #444;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.footer-copyright p {
+    margin-bottom: 10px;
+    /* Space for mobile */
+}
+
+.footer-social-icons a {
+    color: #aaa;
+    font-size: 21px;
+    margin-left: 15px;
+    /* Space between icons */
+}
+
+.footer-social-icons a:hover {
+    color: #fff;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .service-item.large,
+    .service-item-group {
+        flex-basis: calc(48% - 13px);
+        /* Two columns for services */
+    }
+
+    .browse-item {
+        flex-basis: calc(48% - 15px);
+    }
+
+    .brand-column-1,
+    .brand-column-2 {
+        flex-basis: 100%;
+        /* Stack brand columns */
+    }
+
+    .contact-lens-item {
+        flex-basis: calc(33.333% - 20px);
+        /* Three items for lenses */
+    }
+
+    .review-card {
+        flex-basis: calc(50% - 13px);
+        /* Two review cards */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header-main {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .header-actions {
+        justify-content: center;
+    }
+
+    .nav-bar nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav-bar nav li a {
+        padding: 8px 10px;
+    }
+
+    .banner-content h1 {
+        font-size: 2.2em;
+    }
+
+    .banner-content p {
+        font-size: 1.2em;
+    }
+
+    .vision-section,
+    .optometrist-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vision-text-column .btn,
+    .optometrist-text-column .btn {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: fit-content;
+    }
+
+    .eye-exam-promo-content {
+        margin-left: 0;
+        padding: 0 15px;
+        /* Add padding for smaller screens */
+        text-align: center;
+    }
+
+    .eye-exam-paragraph-1,
+    .eye-exam-paragraph-2 {
+        max-width: 100%;
+        /* Full width on mobile */
+    }
+
+    .service-item.large,
+    .service-item-group {
+        flex-basis: 100%;
+        /* Stack service items */
+    }
+
+    .direct-vision-promo .container {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .browse-item {
+        flex-basis: 100%;
+        /* Stack browse items */
+    }
+
+    .browse-item img {
+        width: 60%;
+    }
+
+    .contact-lens-item {
+        flex-basis: calc(50% - 15px);
+        /* Two lens items */
+    }
+
+    .review-card {
+        flex-basis: 100%;
+        /* Stack review cards */
+    }
+
+    .footer-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo-info img,
+    .footer-logo-info .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-copyright {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social-icons {
+        margin-top: 10px;
+    }
+
+    .footer-social-icons a {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .banner-content h1 {
+        font-size: 1.8em;
+    }
+
+    .banner-content p {
+        font-size: 1em;
+    }
+
+    .vision-text-column h2 {
+        font-size: 35px;
+    }
+
+    .eye-exam-promo h3 {
+        font-size: 28px;
+    }
+
+    .services-intro h2,
+    .browse-heading h4,
+    .contact-lenses-heading h4,
+    .reviews-heading h4 {
+        font-size: 28px;
+    }
+
+    .optometrist-text-column h2 {
+        font-size: 24px;
+    }
+
+    .locations-title {
+        font-size: 24px;
+    }
+
+    .contact-lens-item {
+        flex-basis: 100%;
+        /* Stack lens items */
+    }
+
+    .brand-try-on-content p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .brand-try-on-content h5 {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}
